@@ -157,7 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="con_inner_text">
 						<li><span class="fa fa-map-marker" aria-hidden="true"></span> 4th block, <label> Panampilly Nagar.</label></li>
 						<li><span class="fa fa-envelope-o" aria-hidden="true"></span> <a href="mailto:info@example.com">labelle@gmail.com</a></li>
-						<li><span class="fa fa-phone" aria-hidden="true"></span> +91 9074414912</li>
+						<li><span class="fa fa-phone" aria-hidden="true"></span> +91 9876543210</li>
 					</ul>
 
 					<ul class="social_agileinfo">

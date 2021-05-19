@@ -114,26 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</div>
 							</li>
-							<!--<li>
-								<div class="banner-text-w3-agileits">
-									<h5>The best and fastest service</h5>
-									<h2>Have a Good experience with us !!!</h2>
-									<p>Providing Skin care and beauty care for any skin type.</p>
-									<div class="botton">
-										<a href="/contact">Contact Now</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="banner-text-w3-agileits">
-									<h5>Relax yourself with us </h5>
-									<h2>Register and Book an appointment and have a wonderful experience</h2>
-									<p>Providing Skin care and beauty care for any skin type.</p>
-									<div class="botton">
-										<a href="/auth/register">Register Now</a>
-									</div>
-								</div>
-							</li> -->
+						
 						</ul>
 					</div>
 				</section>

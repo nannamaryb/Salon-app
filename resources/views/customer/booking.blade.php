@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h1><a href="/customer/index">La Belle</a></h1>
 					</div>
 					<div class="address">
-						<p>4th block,New York City.</p>
+						<p>4th block,Panampilly Nagar.</p>
 						<p class="para-y"><a href="/customer/about">Get more info</a></p>
 					</div>
 				
