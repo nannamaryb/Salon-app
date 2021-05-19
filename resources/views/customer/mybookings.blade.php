@@ -103,6 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
         <div class="row">
         <div class="col">
+
             <table class="table table-hover">
             <thead>
                 <th>SERVICE</th>
@@ -126,15 +127,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 </td>
             </tr>
-            </tbody>
-        </table>
+
 		@empty
 		<centre>
 		<h2> No Bookings Yet!!</h2> <br>
 		<a href="/customer/viewservices" class="btn btn-outline-success">BOOK NOW</a>
 		</centre>
 		@endforelse
- 
+		</tbody>
+		</table>
       </div>
     </div>
  </div>
