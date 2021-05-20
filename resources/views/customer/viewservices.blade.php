@@ -126,6 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <th>SERVICE</th>
                 <th>DESCRIPTION</th>
                 <th>RATE</th>
+				<th>DURATION(H:m)</th>
                 <th>IMAGE</th>
                 <th></th>
             </thead>
@@ -135,6 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{ $service->sname }} </td>
                 <td> {{ $service->sdesc }} </td>
                 <td> {{ $service->srate }} </td>
+				<td> {{ $service->duration }} </td>
                 <td><img  style="border-radius:50%; width:80px;"  src="{{URL::asset('assets/imgages/'.$service->simage) }}" ></td>
                 <td>
                 <div class="btn">

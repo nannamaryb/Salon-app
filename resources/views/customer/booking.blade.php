@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         
         <div class="form-group">
     		<label for="booktime">Time</label>
-    		<input type="time" class="form-control" name="time" id="booktime" required>
+    		<input type="time" min="<?php echo(new DateTime('10:00'))->format('H:i:s');?>" max="19:00" class="form-control" name="time" id="booktime" required>
   		</div>
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>
   	   </form>

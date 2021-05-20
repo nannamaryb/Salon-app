@@ -23,8 +23,15 @@ class AddBooking_controller extends Controller
         return view('/admin/viewbookings',compact('bookings'));
     }
 
+    static public function todaydate()
+    {
+        $date = Carbon::now('Asia/Kolkata')->format('d-m-y');
+        return $date;
+    }
+
     public function report()
     {
+
         $bookings = BookingModel::all();
         return view('/admin/bookingreport',compact('bookings'));
     }
@@ -57,14 +64,13 @@ class AddBooking_controller extends Controller
     {
         //$sttime = AddServicesModel::where('id','=',$id)->value('start_time');
         //$endtime = AddServicesModel::where('id','=',$id)->value('end_time'); 
-        
+
                 if($request->session()->has('LoggedUser'))
                 {
-
-                   /*$request->validate([
+                    $request->validate([
             
-                   'time' => 'required|date_format:H:i|after:' .$sttime,
-                ]); */
+                        'time' => 'required|date_format:H:i',
+                      ]); 
 
                     $booking = new BookingModel();
                 
@@ -75,6 +81,7 @@ class AddBooking_controller extends Controller
                     $booking->date = $getdate;
                     $booking->time = $gettime;
                     $booking->status = 'Pending';
+
                     $booking->save();
                     
                   return redirect('/customer/viewservices')->with('success','Booking added Successfully');
@@ -93,14 +100,8 @@ class AddBooking_controller extends Controller
     public function booking($id)
     {
         
-        //$a = BookingModel::select('id')->get();
-        //$count = count($a);
-        //echo $count;
-
             $data =  AddServicesModel::find($id);
-             return view('/customer/booking',['service'=>$data]);
-       
-           // return redirect('/customer/viewservices')->with('fail','Bookings full !!');
+            return view('/customer/booking',['service'=>$data]);
     
     } 
 

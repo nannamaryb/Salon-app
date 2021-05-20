@@ -43,13 +43,11 @@ class AddServices_controller extends Controller
     {
             $today = Carbon::now()->format('Y-m-d');
 
-          
-
-        if ($request->hasFile('simage')) 
-        {
+        
 
             $request->validate([
-                'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
+                'simage' => 'mimes:jpeg,bmp,png', // Only allow .jpg, .bmp and .png file types.
+                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/'
             ]);
 
         $getname=request('sname');
@@ -60,8 +58,8 @@ class AddServices_controller extends Controller
         $getimage->move(public_path('assets/imgages'), $name);
        // $getstdate=request('start_date'); 
        // $getenddate=request('end_date'); 
-        $getsttime=request('start_time'); 
-        $getendtime=request('end_time'); 
+       // $getsttime=request('start_time'); 
+       // $getendtime=request('end_time'); 
         $getduration=request('duration'); 
 
         $service = new AddServicesModel();
@@ -72,14 +70,14 @@ class AddServices_controller extends Controller
         $service->simage=$name;
         $service->start_date=$today;
         $service->end_date='2021-12-31';
-        $service->start_time=$getsttime;
-        $service->end_time=$getendtime;
+        $service->start_time='10:00';
+        $service->end_time='19:00';
         $service->duration=$getduration;
 
          $service->save();
 
         return redirect('/admin/addservices')->with('success','Added Successfully');
-      }
+      
      }
 
     /**
@@ -127,10 +125,9 @@ class AddServices_controller extends Controller
     public function update(Request $request, $id)
     {
         
-        if($request->hasFile('simage')) 
-        {
             $request->validate([
-                'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
+                'simage' => 'mimes:jpeg,bmp,png', // Only allow .jpg, .bmp and .png file types.
+                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/'
             ]);
         
         $getname=request('sname');
@@ -138,11 +135,7 @@ class AddServices_controller extends Controller
         $getrate=request('srate');
         $getimage=$request->file('simage'); 
         $name=$getimage->getClientOriginalName();
-        $getimage->move(public_path('assets/service_imgages'), $name); 
-        //$getstdate=request('start_date'); 
-       // $getenddate=request('end_date'); 
-        $getsttime=request('start_time'); 
-        $getendtime=request('end_time'); 
+        $getimage->move(public_path('assets/service_imgages'), $name);  
         $getduration=request('duration'); 
 
         $service = AddServicesModel::find($id);
@@ -151,14 +144,9 @@ class AddServices_controller extends Controller
         $service->sdesc=$getdesc;
         $service->srate=$getrate;
         $service->simage=$name;
-       // $service->start_date=$getstdate;
-       // $service->end_date=$getenddate;
-        $service->start_time=$getsttime;
-        $service->end_time=$getendtime;
         $service->duration=$getduration;
         $service->save();
-    }
-        return redirect('/admin/viewservices');
+        return redirect('/admin/viewservices')->with('success','Updated Successfully');
            
      
     }

@@ -1,6 +1,15 @@
+<?php
+use App\Http\Controllers\AddBooking_controller;
+if(Session::has('LoggedUser'))
+{
+    $date = AddBooking_controller::todaydate();
+}
+?>
+
 <html>
 <body>
-<h3 class="w3l_header">BOOKING REPORT</h3> <br>
+<h3 class="w3l_header"><u>BOOKING REPORT</u></h3>
+<h3><i>Date of report generation: {{ $date }} </i></h3> <br>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-4 col-md-4 col-lg-4"></div>

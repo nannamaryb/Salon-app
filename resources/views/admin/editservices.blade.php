@@ -140,29 +140,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<input value="{{ $services->simage }}" type="file" class="form-control" name="simage" id = "serviceimage" >
 		</div>
 
-		<!--<div class="form-group">
-			<label for="stdate">Start Date</label>
-			<input value="{{ $services->start_date }}" type="date" class="form-control" name="start_date" id="stdate" required>
-		</div>
-
-		<div class="form-group">
-			<label for="enddate">End Date</label>
-			<input value="{{ $services->end_date }}" type="date" class="form-control" name="end_date" id="enddate" required>
-		</div> -->
-
-		<div class="form-group">
-			<label for="sttime">Start Time</label>
-			<input value="{{ $services->start_time }}" type="time" class="form-control" name="start_time" id="sttime"  required>
-		</div>
-
-		<div class="form-group">
-			<label for="endtime">End Time</label>
-			<input value="{{ $services->end_time }}" type="time" class="form-control" name="end_time" id="endtime"  required>
-		</div>
-
 		<div class="form-group">
 			<label for="dur">Duration(H:m)</label>
-			<input value="{{ $services->duration }}" type="time" class="form-control" name="duration" id="dur"  required>
+			<input value="{{ $services->duration }}" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" type="time" class="form-control" name="duration" id="dur"  required>
 		</div>
 
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>

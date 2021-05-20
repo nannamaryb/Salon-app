@@ -106,8 +106,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="slides">
 							<li>
 								<div class="banner-text-w3-agileits">
-									<h5>Experienced hair stylists </h5>
-									<h2>Enjoy Professional Beauty Services!</h2>
+									<h5>Enjoy Professional Beauty Services! </h5>
+									<h2>Discover the Beauty Within !</h2>
 									<p>Providing Skin care and beauty care for any skin type.</p>
 									<div class="botton">
 										<a href="/contact">Contact Now</a>
@@ -117,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li>
 								<div class="banner-text-w3-agileits">
 									<h5>The best and fastest service</h5>
-									<h2>Have a Good experience with us !!!</h2>
+									<h2>Pamper Yourself at our salon !!!</h2>
 									<p>Providing Skin care and beauty care for any skin type.</p>
 									<div class="botton">
 										<a href="/contact">Contact Now</a>

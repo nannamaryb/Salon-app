@@ -93,15 +93,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					        </li> 
 							
 							<li><a href="/admin/gallery">Gallery</a></li> 
-					        <li><a href="/admin/about">About</a></li> 
-					        <li><a href="/admin/contact">Contact</a></li> 
-
-                        <form action="/admin/searchservice" class="form-inline" method="post">
-                              {{ csrf_field() }}
-                                <input class="form-control mr-sm-2" name="sname" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+					        <li><a href="/admin/about">About</a></li>
+							<li><a href="/admin/contact">Contact</a></li> 
 					</ul>
+						</div> 
+						<div>
+                            <form action="/admin/searchservice" class="form-inline" method="post">
+                              {{ csrf_field() }}
+                                <input class="form-control mr-sm-2" name="sname" type="search" placeholder="Services" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+						</div>
 				</div>
 				<!-- /.navbar-collapse -->
 			</nav>
@@ -116,11 +118,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
         <div class="row">
         <div class="col">
+		@if(Session::get('success'))
+            <div class="alert alert-success">
+            {{  Session::get('success') }}
+            </div>
+        @endif
             <table class="table table-hover">
             <thead> 
                 <th>SERVICE</th>
                 <th>DESCRIPTION</th>
                 <th>RATE</th>
+				<th>DURATION(H:m)</th>
                 <th>IMAGE</th>
                 <th>ACTIONS</th>
             </thead>
@@ -130,6 +138,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{ $service->sname }} </td>
                 <td> {{ $service->sdesc }} </td>
                 <td> {{ $service->srate }} </td>
+				<td> {{ $service->duration }} </td>
                 <td><img  style="border-radius:50%; width:80px;"  src="{{URL::asset('assets/imgages/'.$service->simage) }}" ></td>
                 <td>
                     <div class="btn-group">

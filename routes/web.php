@@ -133,11 +133,6 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
     Route::get('/customer/gallery', function () {
         return view('/customer/gallery');
     });
-
-    Route::get('/customer/icons', function () {
-        return view('/customer/icons');
-    });
-    
     
     Route::post('/customer/searchservice',[register_controller::class,'search']);
 

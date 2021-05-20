@@ -141,19 +141,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--<img  alt="service image" style="max-width:130px;margin-top:20px;" /> -->
 		</div>
 
-		<div class="form-group">
-			<label for="starttime">Start time</label>
-			<input type="time" class="form-control" name="start_time" id="starttime"  placeholder="Start time" required>
-		</div>
-
-		<div class="form-group">
-			<label for="endtime">End time</label>
-			<input type="time" class="form-control" name="end_time" id="endtime"  placeholder="End time" required>
-		</div>
 
 		<div class="form-group">
 			<label for="duration">Duration</label>
-			<input type="time" class="form-control" name="duration" id="duration"  placeholder="Duration" required>
+			<input type="time" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" class="form-control" name="duration" id="duration"  placeholder="Duration" required>
 		</div>
 		
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>
