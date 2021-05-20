@@ -99,6 +99,8 @@ Route::get('/admin/decline/{id}',[login_controller::class,'decline']);
 
 Route::get('/admin/bookingreport',[AddBooking_controller::class,'report']);
 
+//Route::post('/admin/searchbooking',[login_controller::class,'searchBooking']);
+
 Route::get('/admin/about', function () {
     return view('/admin/about');
 });
@@ -162,21 +164,8 @@ Route::get('/register',[register_controller::class,'create']);
 Route::post('/registerread',[register_controller::class,'store']); */
 
 
-//Route::post('/admin/searchbooking',[login_controller::class,'searchBooking']);
 
 
-
-
-
-
-
-
-
-
-
-//Route::get('/customer/editprofile/{id}',[register_controller::class,'profileEdit']);
-
-//Route::post('/customer/profiledit/{id}',[register_controller::class,'updateProfile']);
 
 
 

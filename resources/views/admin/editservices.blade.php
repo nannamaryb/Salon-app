@@ -96,14 +96,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="/admin/gallery">Gallery</a></li>
 						    <li><a href="/admin/about">About</a></li>
 							<li><a class="active" href="/admin/contact">Contact</a></li>
-			
+							</ul>
+						</div>
 
+						<div>
                         <form action="/admin/searchservice" class="form-inline" method="post">
                               {{ csrf_field() }}
                                 <input class="form-control mr-sm-2" name="sname" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
-					</ul>
+						</div>
 				</div>
 				<!-- /.navbar-collapse -->
 			</nav>
@@ -112,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //navigation -->
 </div>
 <br>
-<h3 class="w3l_header">EDIT</h3> <br> 
+<h3 class="w3l_header">EDIT SERVICE</h3> <br> 
 <div class="container">
      <div class="row">
        <div class="col">

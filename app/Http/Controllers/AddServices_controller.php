@@ -43,8 +43,6 @@ class AddServices_controller extends Controller
     {
             $today = Carbon::now()->format('Y-m-d');
 
-        
-
             $request->validate([
                 'simage' => 'mimes:jpeg,bmp,png', // Only allow .jpg, .bmp and .png file types.
                 'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/'
@@ -56,10 +54,6 @@ class AddServices_controller extends Controller
         $getimage=$request->file('simage');
         $name=$getimage->getClientOriginalName();
         $getimage->move(public_path('assets/imgages'), $name);
-       // $getstdate=request('start_date'); 
-       // $getenddate=request('end_date'); 
-       // $getsttime=request('start_time'); 
-       // $getendtime=request('end_time'); 
         $getduration=request('duration'); 
 
         $service = new AddServicesModel();

@@ -16,12 +16,7 @@ use Illuminate\Support\Facades\Hash;
 
 class login_controller extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-
+    
 
     public function index()
     {

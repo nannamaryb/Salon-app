@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<ul class="dropdown-menu agile_short_dropdown">
 									<li><a href="/admin/viewbookings">Bookings</a></li>
 									<li><a href="/admin/viewcustomers">Customers</a></li>
-								</ul>
+			 					</ul>
 					</li> 
 
 					<li><a href="/admin/gallery">Gallery</a></li> 
