@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('/assets/css/font-awesome.css') }}" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- banner -->
 	<div class="banner-1 jarallax" id="home">
-		<img class="jarallax-img" src="{{ asset('assets/images/22.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/22.jpg') }}" alt="">
 		<header>
 			<div class="container">
 				<div class="header-bottom-agileits">
@@ -116,68 +116,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="gallery-info">
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p1.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p1.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p1.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p1.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p2.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p2.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p2.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p2.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p3.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p3.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p3.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p3.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p4.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p4.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p4.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p4.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p5.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p5.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p5.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p5.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p6.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p6.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p6.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p6.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p7.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p7.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p7.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p7.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p8.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p8.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p8.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p8.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p9.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p9.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p9.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p9.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p10.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p10.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p10.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p10.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p11.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p11.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p11.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p11.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="col-md-3 gallery-grids">
-					<a href="{{ asset('assets/images/p12.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
-						<img src="{{ asset('assets/images/p12.jpg') }}" alt="" class="img-responsive zoom-img">
+					<a href="{{ asset('/assets/images/p12.jpg') }}" class="gallery-box" data-lightbox="example-set" data-title="">
+						<img src="{{ asset('/assets/images/p12.jpg') }}" alt="" class="img-responsive zoom-img">
 					</a>
 				</div>
 				<div class="clearfix"> </div>	
 			</div>
-			<script src="{{ asset('assets/js/lightbox-plus-jquery.min.js') }}"></script>
+			<script src="{{ asset('/assets/js/lightbox-plus-jquery.min.js') }}"></script>
 		</div>
 </div>
 <!--//gallery-->
@@ -206,14 +206,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 w3layouts_footer_grid">
 					<h3>Services <span>Provided</span></h3>
 					<ul class="con_inner_text midimg">
-						<li><a href="#"><img src="{{ asset('assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
 					</ul>
 
 				</div>
@@ -226,11 +226,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script type='text/javascript' src="{{ asset('assets/js/jquery-2.2.3.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('/assets/js/jquery-2.2.3.min.js') }}"></script>
 	<!-- start-smoth-scrolling -->
 
 
-	<script src="{{ asset('assets/js/jarallax.js') }}"></script>
+	<script src="{{ asset('/assets/js/jarallax.js') }}"></script>
 
 	<script type="text/javascript">
 		/* init Jarallax */
@@ -241,7 +241,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		})
 	</script>
 	<!-- flexSlider -->
-	<script defer src="{{ asset('assets/js/jquery.flexslider.js') }}"></script>
+	<script defer src="{{ asset('/assets/js/jquery.flexslider.js') }}"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('.flexslider').flexslider({
@@ -255,7 +255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //flexSlider -->
 
 	<!-- Owl-Carousel-JavaScript -->
-	<script src="{{ asset('assets/js/owl.carousel.js') }}"></script>
+	<script src="{{ asset('/assets/js/owl.carousel.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -267,8 +267,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="{{ asset('assets/js/move-top.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/easing.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/easing.js') }}"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -301,15 +301,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //here ends scrolling icon -->
 
 	<!-- stats -->
-	<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countup.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.waypoints.min.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.countup.js') }}"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 	<!-- //stats -->
 
 	<!--js for bootstrap working-->
-	<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+	<script src="{{ asset('/assets/js/bootstrap.js') }}"></script>
 	<!-- //for bootstrap working -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

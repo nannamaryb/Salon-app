@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('/assets/css/font-awesome.css') }}" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- banner -->
 	<div class="banner-1 jarallax" id="home">
-		<img class="jarallax-img" src="{{ asset('assets/images/22.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/22.jpg') }}" alt="">
         <header>
 			<div class="container">
 				<div class="header-bottom-agileits">

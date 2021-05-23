@@ -23,6 +23,15 @@ class AddBooking_controller extends Controller
         return view('/admin/viewbookings',compact('bookings'));
     }
 
+    public function searchBooking(Request $request)
+    {
+            $getdate = request('date');
+            $bookings = BookingModel::query()->where('date','LIKE',"%{$getdate}%")->get();
+            return view('/admin/viewbookings',compact('bookings'));
+        
+    }
+
+
     static public function todaydate()
     {
         $date = Carbon::now('Asia/Kolkata')->format('d-m-y');
@@ -62,8 +71,7 @@ class AddBooking_controller extends Controller
      */
     public function store(Request $request,$id)
     {
-        //$sttime = AddServicesModel::where('id','=',$id)->value('start_time');
-        //$endtime = AddServicesModel::where('id','=',$id)->value('end_time'); 
+        
 
                 if($request->session()->has('LoggedUser'))
                 {

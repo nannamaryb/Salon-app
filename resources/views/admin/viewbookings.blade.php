@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('/assets/css/font-awesome.css') }}" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- banner -->
 <div class="banner-1 jarallax" id="home">
-		<img class="jarallax-img" src="{{ asset('assets/images/22.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/22.jpg') }}" alt="">
 		<header>
 			<div class="container">
 				<div class="header-bottom-agileits">
@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 					</li> 
 
-                    <li class="dropdown">
+                    <li class="dropdown"> 
 								<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">View</a>
 								<ul class="dropdown-menu agile_short_dropdown">
 									<li><a href="/admin/viewbookings">Bookings</a></li>
@@ -94,13 +94,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="/admin/gallery">Gallery</a></li> 
 					<li><a href="/admin/about">About</a></li> 
 					<li><a href="/admin/contact">Contact</a></li> 
-
-                       <!-- <form action="/admin/searchbooking" class="form-inline" method="post">
-                              {{ csrf_field() }}
-                                <input class="form-control mr-sm-2" name="sname" type="search" placeholder="Service" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>   -->
 					</ul>
+					</div>
+					<div>
+                        <form action="/admin/searchbooking" class="form-inline" method="post">
+                              {{ csrf_field() }}
+                                <input class="form-control mr-sm-2" name="date" type="date" placeholder="Service" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>  
+					</div>
 				</div>
 				<!-- /.navbar-collapse -->
 			</nav>
@@ -154,11 +156,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script type='text/javascript' src="{{ asset('assets/js/jquery-2.2.3.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('/assets/js/jquery-2.2.3.min.js') }}"></script>
 	<!-- start-smoth-scrolling -->
 
 
-	<script src="{{ asset('assets/js/jarallax.js') }}"></script>
+	<script src="{{ asset('/assets/js/jarallax.js') }}"></script>
 
 	<script type="text/javascript">
 		/* init Jarallax */
@@ -169,7 +171,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		})
 	</script>
 	<!-- flexSlider -->
-	<script defer src="{{ asset('assets/js/jquery.flexslider.js') }}"></script>
+	<script defer src="{{ asset('/assets/js/jquery.flexslider.js') }}"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('.flexslider').flexslider({
@@ -183,7 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //flexSlider -->
 
 	<!-- Owl-Carousel-JavaScript -->
-	<script src="{{ asset('assets/js/owl.carousel.js') }}"></script>
+	<script src="{{ asset('/assets/js/owl.carousel.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -195,8 +197,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="{{ asset('assets/js/move-top.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/easing.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/easing.js') }}"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -229,15 +231,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //here ends scrolling icon -->
 
 	<!-- stats -->
-	<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countup.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.waypoints.min.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.countup.js') }}"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 	<!-- //stats -->
 
 	<!--js for bootstrap working-->
-	<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+	<script src="{{ asset('/assets/js/bootstrap.js') }}"></script>
 	<!-- //for bootstrap working -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

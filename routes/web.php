@@ -48,18 +48,11 @@ Route::get('/viewservices',[Register_controller::class,'viewservices']);
 
 Route::post('/searchservices',[register_controller::class,'searchservice']);
     
-
-
-
-
 Route::post('/auth/save',[login_controller::class,'save'])->name('auth.save');
 
 Route::post('/auth/check',[login_controller::class,'check'])->name('auth.check');
 
 Route::get('/auth/logout',[login_controller::class,'logout'])->name('auth.logout');
-
-
-
 
 
 
@@ -89,7 +82,7 @@ Route::get('/admin/edit/{id}',[AddServices_controller::class,'edit']);
 
 Route::post('/admin/servicesedit/{id}',[AddServices_controller::class,'update']);
 
-Route::get('/admin/delete/{id}',[AddServices_controller::class,'delete']);
+//Route::get('/admin/delete/{id}',[AddServices_controller::class,'delete']);
 
 Route::get('/admin/viewbookings',[AddBooking_controller::class,'index']);
 
@@ -99,7 +92,7 @@ Route::get('/admin/decline/{id}',[login_controller::class,'decline']);
 
 Route::get('/admin/bookingreport',[AddBooking_controller::class,'report']);
 
-//Route::post('/admin/searchbooking',[login_controller::class,'searchBooking']);
+Route::post('/admin/searchbooking',[AddBooking_controller::class,'searchBooking']);
 
 Route::get('/admin/about', function () {
     return view('/admin/about');
@@ -156,12 +149,6 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
 });
 
 
-
-/*Route::get('/login',[login_controller::class,'create']);
-Route::post('/loginread',[login_controller::class,'check']);
-
-Route::get('/register',[register_controller::class,'create']);
-Route::post('/registerread',[register_controller::class,'store']); */
 
 
 

@@ -84,9 +84,9 @@ class register_controller extends Controller
 
      function delete($id)
     {
-        $data = BookingModel::find($id);
-        $data->delete();
-        return redirect('/customer/mybookings');
+       $book = BookingModel::find($id);
+       $book->delete();
+       return redirect('/customer/mybookings');
     }
 
     public function viewProfile(Request $request)

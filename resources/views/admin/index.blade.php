@@ -26,14 +26,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('/assets/css/font-awesome.css') }}" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.css') }}" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/flexslider.css') }}" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" href="{{ asset('/assets/css/owl.carousel.css') }}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ asset('/assets/css/flexslider.css') }}" type="text/css" media="screen" property="" />
 	<!--// Owl-Carousel-CSS -->
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -44,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- banner -->
 	<div class="banner jarallax" id="home">
-		<img class="jarallax-img" src="{{ asset('assets/images/22.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/22.jpg') }}" alt="">
 		<header>
 			<div class="container">
 				<div class="header-bottom-agileits">
@@ -123,9 +123,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h5>Enjoy Professional Beauty Services!</h5>
 									<h2>Discover the Beauty Within !</h2>
 									<p>Providing expert skin care advice & beauty services using natural products to cater for any skin.</p>
-									<div class="botton">
-									<a href="/admin/contact">Contact Now</a> 
-									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="banner-text-w3-agileits">
+									<h5>The best and fastest service</h5>
+									<h2>Pamper Yourself at our salon !!!</h2>
+									<p>Providing Skin care and beauty care for any skin type.</p>
+								</div>
+							</li>
+							<li>
+								<div class="banner-text-w3-agileits">
+									<h5>Relax yourself with us </h5>
+									<h2>Register and Book an appointment and have a wonderful experience</h2>
+									<p>Providing Skin care and beauty care for any skin type.</p>
 								</div>
 							</li>
 						</ul>
@@ -189,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- wthree-mid -->
 	<div class="wthree-mid jarallax">
-		<img class="jarallax-img" src="{{ asset('assets/images/33.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/33.jpg') }}" alt="">
 		<div class="container">
 			<h3>Want to know more about us ??</h3>
 			<p>Get to know more about us</p>
@@ -217,10 +229,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 
 					<ul class="social_agileinfo">
-					<li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="www.twitter.com" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+					    <li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="www.google.com" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="https://www.google.com/" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 w3layouts_footer_grid">
@@ -229,14 +241,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 w3layouts_footer_grid">
 					<h3>Services  <span>Provided</span></h3>
 					<ul class="con_inner_text midimg">
-						<li><a href="#"><img src="{{ asset('assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
 					</ul>
 
 				</div>
@@ -249,11 +261,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script type='text/javascript' src="{{ asset('assets/js/jquery-2.2.3.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('/assets/js/jquery-2.2.3.min.js') }}"></script>
 	<!-- start-smoth-scrolling -->
 
 
-	<script src="{{ asset('assets/js/jarallax.js') }}"></script>
+	<script src="{{ asset('/assets/js/jarallax.js') }}"></script>
 
 	<script type="text/javascript">
 		/* init Jarallax */
@@ -264,7 +276,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		})
 	</script>
 	<!-- flexSlider -->
-	<script defer src="{{ asset('assets/js/jquery.flexslider.js') }}"></script>
+	<script defer src="{{ asset('/assets/js/jquery.flexslider.js') }}"></script>
 	<script type="text/javascript">
 		$(window).load(function () {
 			$('.flexslider').flexslider({
@@ -278,7 +290,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //flexSlider -->
 
 	<!-- Owl-Carousel-JavaScript -->
-	<script src="{{ asset('assets/js/owl.carousel.js') }}"></script>
+	<script src="{{ asset('/assets/js/owl.carousel.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -290,8 +302,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="{{ asset('assets/js/move-top.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/easing.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/easing.js') }}"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -324,15 +336,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //here ends scrolling icon -->
 
 	<!-- stats -->
-	<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countup.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.waypoints.min.js') }}"></script>
+	<script src="{{ asset('/assets/js/jquery.countup.js') }}"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 	<!-- //stats -->
 
 	<!--js for bootstrap working-->
-	<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+	<script src="{{ asset('/assets/js/bootstrap.js') }}"></script>
 	<!-- //for bootstrap working -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

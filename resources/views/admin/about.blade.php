@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('/assets/css/font-awesome.css') }}" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- banner -->
 	<div class="banner-1 jarallax" id="home">
-		<img class="jarallax-img" src="{{ asset('assets/images/22.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/22.jpg') }}" alt="">
 		<header>
 			<div class="container">
 				<div class="header-bottom-agileits">
@@ -127,11 +127,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p><i class="fa fa-check" aria-hidden="true"></i> Safe Hair and Makeup products </p>
 				</div>
 			<div class="col-md-6 aboutright">
-				<img src="{{ asset('assets/images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg') }}" class="img-responsive" alt="" />
+				<img src="{{ asset('/assets/images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg') }}" class="img-responsive" alt="" />
 			</div>
 
 			<div class="col-md-6 aboutright">
-				<img style="max-width:150px;margin-top:20px;" src="{{ asset('assets/images/img3.jpg') }}" class="img-responsive" alt=""/>
+				<img style="max-width:150px;margin-top:20px;" src="{{ asset('/assets/images/img3.jpg') }}" class="img-responsive" alt=""/>
 			</div>
 
 			<div class="clearfix"></div>
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //about -->
 <!-- wthree-mid -->
     <div class="wthree-mid jarallax">
-		<img class="jarallax-img" src="{{ asset('assets/images/33.jpg') }}" alt="">
+		<img class="jarallax-img" src="{{ asset('/assets/images/33.jpg') }}" alt="">
 		<div class="container">
 			<h3>La Belle Salon for the girls out there !</h3>
 			<p>Treat yourself to a facial or celebrating a special occasion. Our beauty
@@ -181,14 +181,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 w3layouts_footer_grid">
 					<h3>Services <span>Provided</span></h3>
 					<ul class="con_inner_text midimg">
-						<li><a href="#"><img src="{{ asset('assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="{{ asset('/assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
 					</ul>
 				</div>
 
@@ -201,9 +201,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script type='text/javascript' src='assets/js/jquery-2.2.3.min.js'></script>
+	<script type='text/javascript' src='/assets/js/jquery-2.2.3.min.js'></script>
 	<!-- start-smoth-scrolling -->
-	<script src="{{ asset('assets/js/jarallax.js') }}"></script>
+	<script src="{{ asset('/assets/js/jarallax.js') }}"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
@@ -213,8 +213,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		})
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="{{ asset('assets/js/move-top.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/js/easing.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/move-top.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/assets/js/easing.js') }}"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -248,7 +248,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!--js for bootstrap working-->
-	<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+	<script src="{{ asset('/assets/js/bootstrap.js') }}"></script>
 	<!-- //for bootstrap working -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>

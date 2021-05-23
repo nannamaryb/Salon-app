@@ -32,14 +32,6 @@ class login_controller extends Controller
         
     }
 
-    /*public function searchBooking(Request $request)
-    {
-            $getname = request('sname');
-            $services = BookingModel::query()->where('sname','LIKE',"%{$getname}%")->get();
-            return view('/admin/viewbookings',compact('services'));
-        
-    }*/
-
     public function gallery()
     {
         return view('/admin/gallery');
@@ -63,7 +55,7 @@ class login_controller extends Controller
         $request->validate([ 
 
             'cname'=> 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
-            'cmob'=>'required|max:10',
+            'cmob'=>'required|max:10|unique:register_models',
             'cemail'=>'required|email|unique:register_models',
             'cpass'=>'required_with:conpass|same:conpass|min:4|max:12',
             'conpass'=>'required',

@@ -98,6 +98,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
      <div class="row">
        <div class="col">
+	   @if(Session::get('fail'))
+            <div class="alert alert-danger">
+            {{  Session::get('fail') }}
+            </div>
+        @endif
 
 		<h3 class="w3l_header">MY BOOKINGS</h3> <br>
         <div class="container">
@@ -122,10 +127,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{$booking->time }} </td>
 				<td> {{ $booking->status }}
                 <div class="btn">
+				@if($booking->status == 'Pending')
 				<td>
                 <a href={{"/customer/bookingdel/".$booking->id}} class="btn btn-outline-success">Delete</a> 
                 </div>
                 </td>
+				@endif
             </tr>
 
 		@empty

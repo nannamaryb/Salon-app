@@ -41,12 +41,15 @@ class AddServices_controller extends Controller
      */
     public function store(Request $request)
     {
-            $today = Carbon::now()->format('Y-m-d');
 
             $request->validate([
-                'simage' => 'mimes:jpeg,bmp,png', // Only allow .jpg, .bmp and .png file types.
-                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/'
+
+                'simage' => 'mimes:jpeg,bmp,png', 
+                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
+                'sdesc' => 'required|min:2|max:100|regex:/^[A-Za-z\s]+$/',
             ]);
+
+        $today = Carbon::now()->format('Y-m-d');
 
         $getname=request('sname');
         $getdesc=request('sdesc');
@@ -96,12 +99,12 @@ class AddServices_controller extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    function delete($id)
+   /* function delete($id)
     {
         $data = AddServicesModel::find($id);
         $data->delete();
         return redirect('/admin/viewservices');
-    }
+    }  */
 
     public function edit($id)
     {
@@ -120,8 +123,11 @@ class AddServices_controller extends Controller
     {
         
             $request->validate([
-                'simage' => 'mimes:jpeg,bmp,png', // Only allow .jpg, .bmp and .png file types.
-                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/'
+
+                //'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
+                //'sdesc' => 'required|min:2|max:60|regex:/^[A-Za-z\s]+$/',
+                'simage' => 'mimes:jpeg,bmp,png', 
+               
             ]);
         
         $getname=request('sname');

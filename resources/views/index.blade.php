@@ -30,8 +30,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--// Bootstrap-CSS -->
 	<link href="assets/css/font-awesome.css" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ asset('assets/css/flexslider.css" type="text/css" media="screen" property="" />
 	<!--// Owl-Carousel-CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
@@ -230,10 +230,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 
 					<ul class="social_agileinfo">
-						<li><a href="www.facebook.com" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="www.twitter.com" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="www.instagram.com" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="www.google.com" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+					    <li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.google.com/" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 w3layouts_footer_grid">
