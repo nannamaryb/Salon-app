@@ -26,11 +26,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!--// Bootstrap-CSS -->
-	<link href="assets/css/font-awesome.css" rel="stylesheet">
+	<link href="/assets/css/font-awesome.css" rel="stylesheet">
 	<!--// Font-Awesome-CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- //Style Sheets -->
 	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- banner -->
 	<div class="banner-1 jarallax" id="home">
-		<img class="jarallax-img" src="assets/images/22.jpg" alt="">
+		<img class="jarallax-img" src="/assets/images/22.jpg" alt="">
 		<header>
 			<div class="container">
 				<div class="header-bottom-agileits">
@@ -123,37 +123,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 				
-				<!-- <div class="col-md-8 contact-w3ls">
-					<form action="#" method="post">
-					<div class="col-md-5 col-sm-5 contact-left agileits-w3layouts">
-					
-						<div class="f-control"> 
-							<label class="header">Full Name <span>:</span></label>
-							<input type="text" name="First Name" placeholder="Name" required="">
-						</div>
-						
-						<div class="f-control"> 
-							<label class="header">Email <span>:</span></label>
-							<input type="email" class="email" name="Email" placeholder="Email" required="">
-						</div>
-						
-						<div class="f-control">
-							<label class="header">Mobile Number <span>:</span></label>
-							<input type="text" name="Number" placeholder="Mobile Number" required="">
-						</div>	
-						 <input type="text" class="email" name="Last Name" placeholder="Last Name" required=""> 
-					</div> 
-					<div class="col-md-7 col-sm-7 contact-right agileits-w3layouts">
-						
-							<label class="header">Message <span>:</span></label>
-							<textarea name="Message" placeholder="Message" required=""></textarea>
-						
-						
-					</div>
-					<div class="clearfix"> </div> 
-					<input type="submit" value="Send">
-				</form>
-				</div> -->
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -178,10 +147,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 
 					<ul class="social_agileinfo">
-						<li><a href="www.facebook.com" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="www.twitter.com" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="www.instagram.com" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="www.google.com" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+					    <li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.google.com/" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 w3layouts_footer_grid">
@@ -190,14 +159,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-4 w3layouts_footer_grid">
 					<h3>Services <span>Provided</span></h3>
 					<ul class="con_inner_text midimg">
-						<li><a href="#"><img src="assets/images/p2.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p3.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p4.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p5.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p6.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p7.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p8.jpg" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="assets/images/p9.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p2.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p3.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p4.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p5.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p6.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p7.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p8.jpg" alt="" class="img-responsive" /></a></li>
+						<li><a href="#"><img src="/assets/images/p9.jpg" alt="" class="img-responsive" /></a></li>
 					</ul>
 
 				</div>
@@ -211,9 +180,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script type='text/javascript' src='assets/js/jquery-2.2.3.min.js'></script>
+	<script type='text/javascript' src='/assets/js/jquery-2.2.3.min.js'></script>
 	<!-- start-smoth-scrolling -->
-	<script src="assets/js/jarallax.js"></script>
+	<script src="/assets/js/jarallax.js"></script>
 	<script type="text/javascript">
 		/* init Jarallax */
 		$('.jarallax').jarallax({
@@ -223,8 +192,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		})
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="assets/js/move-top.js"></script>
-	<script type="text/javascript" src="assets/js/easing.js"></script>
+	<script type="text/javascript" src="/assets/js/move-top.js"></script>
+	<script type="text/javascript" src="/assets/js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -258,7 +227,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 	<!--js for bootstrap working-->
-	<script src="assets/js/bootstrap.js"></script>
+	<script src="/assets/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
