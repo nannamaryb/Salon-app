@@ -210,11 +210,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<br>
 	<br> 
-
-	 <h3 class="w3l_header">CONTACT <span>US</span></h3> 
-	 <br>
-	 <br>
-
 	
 	<!-- footer -->
 	<h3 class="w3l_header">CONTACT <span>US</span></h3> 

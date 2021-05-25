@@ -45,8 +45,8 @@ class AddServices_controller extends Controller
             $request->validate([
 
                 'simage' => 'mimes:jpeg,bmp,png', 
-                'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
-                'sdesc' => 'required|min:2|max:100|regex:/^[A-Za-z\s]+$/',
+                //'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
+                //'sdesc' => 'required|min:2|max:100|regex:/^[A-Za-z\s]+$/',
             ]);
 
         $today = Carbon::now()->format('Y-m-d');
