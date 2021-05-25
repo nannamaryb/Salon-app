@@ -266,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- start-smoth-scrolling -->
 
 
-	<script src="'/assets/js/jarallax.js'"></script>
+	<script src="/assets/js/jarallax.js"></script>
 
 	<script type="text/javascript">
 		/* init Jarallax */
