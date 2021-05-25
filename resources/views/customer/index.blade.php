@@ -209,72 +209,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //wthree-mid -->
 
 	<br>
-	<br>
+	<br> 
 
 	 <h3 class="w3l_header">CONTACT <span>US</span></h3> 
 	 <br>
 	 <br>
 
 	
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="f-bg-w3l">
-				<div class="col-md-4 w3layouts_footer_grid">
-					<h2>Contact <span>Information</span></h2>
-					<ul class="con_inner_text">
-						<li><span class="fa fa-map-marker" aria-hidden="true"></span> 4th block, <label> Panampilly Nagar.</label></li>
-						<li><span class="fa fa-envelope-o" aria-hidden="true"></span> <a href="mailto:info@example.com">labelle@gmail.com</a></li>
-						<li><span class="fa fa-phone" aria-hidden="true"></span> +91 9876543210</li>
-					</ul>
-
-					<ul class="social_agileinfo">
-					    <li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.google.com/" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 w3layouts_footer_grid">
-				
-				</div>
-				<div class="col-md-4 w3layouts_footer_grid">
-					<h3>Services <span>Provided</span></h3>
-					<ul class="con_inner_text midimg">
-						<li><a href="#"><img src="{{ asset('/assets/images/p2.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p3.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p4.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p5.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p6.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p7.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p8.jpg') }}" alt="" class="img-responsive" /></a></li>
-						<li><a href="#"><img src="{{ asset('/assets/images/p9.jpg') }}" alt="" class="img-responsive" /></a></li>
-					</ul>
-
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	
-	</div>
-	<!-- //footer -->
-
-	<!-- wthree-mid -->
-	<div class="wthree-mid jarallax">
-		<img class="jarallax-img" src="{{ asset('/assets/images/33.jpg') }}" alt="">
-		<div class="container">
-			<h3>Want to know more about us ??</h3>
-			<p>Get to know more about us</p>
-	 		<div class="botton">
-				<a href="/customer/about">About Us</a>
-			</div>
-		</div>
-	</div>
-	<!-- //wthree-mid -->
-
-	<br>
-	<br>
-
 	<!-- footer -->
 	<h3 class="w3l_header">CONTACT <span>US</span></h3> 
 		<div class="footer">
@@ -289,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 
 					<ul class="social_agileinfo">
-					<li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+					    <li><a href="https://www.facebook.com/" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="https://twitter.com/" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.instagram.com/" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="https://www.google.com/" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
