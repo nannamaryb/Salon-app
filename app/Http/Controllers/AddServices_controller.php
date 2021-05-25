@@ -56,7 +56,7 @@ class AddServices_controller extends Controller
         $getrate=request('srate');
         $getimage=$request->file('simage');
         $name=$getimage->getClientOriginalName();
-        $getimage->move(public_path('assets/imgages'), $name);
+        $getimage->move(public_path('/assets/imgages'), $name);
         $getduration=request('duration'); 
 
         $service = new AddServicesModel();
@@ -99,12 +99,12 @@ class AddServices_controller extends Controller
      * @return \Illuminate\Http\Response
      */
 
-   /* function delete($id)
+     function delete($id)
     {
         $data = AddServicesModel::find($id);
         $data->delete();
         return redirect('/admin/viewservices');
-    }  */
+    }  
 
     public function edit($id)
     {

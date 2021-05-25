@@ -143,7 +143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td>
                     <div class="btn-group">
                         <a href={{"/admin/edit/".$service->id}} class="btn btn-outline-success">Edit</a>
-                     <!--   <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger">Delete</a> -->
+                        <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger">Delete</a> 
                     </div>
                 </td>
             </tr>

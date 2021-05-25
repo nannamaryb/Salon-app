@@ -82,7 +82,7 @@ Route::get('/admin/edit/{id}',[AddServices_controller::class,'edit']);
 
 Route::post('/admin/servicesedit/{id}',[AddServices_controller::class,'update']);
 
-//Route::get('/admin/delete/{id}',[AddServices_controller::class,'delete']);
+Route::get('/admin/delete/{id}',[AddServices_controller::class,'delete']);
 
 Route::get('/admin/viewbookings',[AddBooking_controller::class,'index']);
 
