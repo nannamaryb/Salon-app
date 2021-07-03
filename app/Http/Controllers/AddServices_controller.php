@@ -99,12 +99,12 @@ class AddServices_controller extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     /*function delete($id)
+     function delete($id)
     {
         $data = AddServicesModel::find($id);
         $data->delete();
         return redirect('/admin/viewservices');
-    }  */
+    }  
 
     public function edit($id)
     {

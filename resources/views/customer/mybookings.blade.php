@@ -119,12 +119,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <th></th>
             </thead>
             <tbody>
-            @forelse($bookings as $booking)
+            @forelse($bookings as $booking) 
             <tr>
                 <td> {{ optional($booking->service)->sname }} </td>
                 <td> {{ optional($booking->service)->srate }} </td>
                 <td> {{$booking->date }} </td>
-                <td> {{$booking->time }} </td>
+                <td> {{ <?php DateTime($booking->time)->format('hh:mm'); ?>}} </td>
 				<td> {{ $booking->status }}
                 <div class="btn">
 				@if($booking->status == 'Pending')
