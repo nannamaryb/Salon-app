@@ -124,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{ optional($booking->service)->sname }} </td>
                 <td> {{ optional($booking->service)->srate }} </td>
                 <td> {{$booking->date }} </td>
-                <td> {{ <?php echo(new DateTime($booking->time))->format('hh:mm'); ?>}} </td>
+                <td> <?php echo(new DateTime($booking->time))->format('h:m'); ?> </td>
 				<td> {{ $booking->status }}
                 <div class="btn">
 				@if($booking->status == 'Pending')
