@@ -113,9 +113,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
 		<h3> Timing </h3>
 		<br>
-		<h4>10:00</h4>
+		<h5>Working time from<h5>
+		<h4>10:00 AM</h4>
 		<h5> to<h5>
-		<h4>19:00</h4>
+		<h4>7:00 PM</h4>
 		</div>
 
 		<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
