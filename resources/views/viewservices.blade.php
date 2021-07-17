@@ -24,15 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			window.scrollTo(0, 1);
 		}
 	</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("h2").hide();
-  });
-});
-</script>
+	
 	<!-- //Meta Tags -->
 	<!-- Style Sheets -->
 	<link href="{{ asset('/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
@@ -162,7 +154,8 @@ $(document).ready(function(){
 	<!-- //flexSlider -->
 
 	<!-- Owl-Carousel-JavaScript -->
-	<script src="{{ asset('/assets/js/owl.carousel.js') }}"></script>
+	<script src="/assets/js/owl.carousel.js"></script>
+	
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -174,8 +167,8 @@ $(document).ready(function(){
 		});
 	</script>
 	<!-- //Owl-Carousel-JavaScript -->
-	<script type="text/javascript" src="{{ asset('/assets/js/move-top.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('/assets/js/easing.js') }}"></script>
+	<script type="text/javascript" src="/assets/js/move-top.js"></script>
+	<script type="text/javascript" src="/assets/js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
