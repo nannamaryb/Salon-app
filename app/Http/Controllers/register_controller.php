@@ -103,6 +103,7 @@ class register_controller extends Controller
         return view('/customer/editprofile',compact('customers'));
     } 
 
+
     public function updateProfile(Request $request, $id)
     {
 

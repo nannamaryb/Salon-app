@@ -14,4 +14,6 @@ class AddServicesModel extends Model
     {
         return $this->hasMany(BookingModel::class,'service_id');
     }
+
+    
 }

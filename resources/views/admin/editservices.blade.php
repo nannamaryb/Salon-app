@@ -116,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <h3 class="w3l_header">EDIT SERVICE</h3> <br> 
 <div class="container">
-     <div class="row">
+     <div class="row"> 
        <div class="col">
      <form action="/admin/servicesedit/{{ $services->id }}" method="post" enctype="multipart/form-data" >
 

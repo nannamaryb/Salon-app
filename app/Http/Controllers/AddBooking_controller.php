@@ -31,7 +31,6 @@ class AddBooking_controller extends Controller
         
     }
 
-
     static public function todaydate()
     {
         $date = Carbon::now('Asia/Kolkata')->format('d-m-y');
@@ -71,8 +70,6 @@ class AddBooking_controller extends Controller
      */
     public function store(Request $request,$id)
     {
-        
-
                 if($request->session()->has('LoggedUser'))
                 {
                     $request->validate([
@@ -99,6 +96,41 @@ class AddBooking_controller extends Controller
         return redirect('/customer/viewservices');
     }
 
+    /*
+    public function bookingEdit($id)
+    {
+        $bookings = BookingModel::find($id);
+        return view('/customer/editbooking',compact('bookings'));
+    }
+
+    public function updateBooking(Request $request,$id)
+    {
+        if($request->session()->has('LoggedUser'))
+                {
+                    $request->validate([
+            
+                        'time' => 'required|date_format:H:i',
+                      ]); 
+
+                    $booking = new BookingModel();
+                
+                    $getdate = request('date');
+                    $gettime = request('time');
+                    $booking->service_id = $id;
+                    $booking->customer_id = $request->session()->get('LoggedUser');
+                    $booking->date = $getdate;
+                    $booking->time = $gettime;
+                    $booking->status = 'Pending';
+
+                    $booking->save();
+                    
+                  return redirect('/customer/viewservices')->with('success','Updated Successfully');
+
+                }
+        return redirect('/customer/viewservices');
+    }
+    */
+
     /**
      * Display the specified resource.
      *
@@ -107,12 +139,9 @@ class AddBooking_controller extends Controller
      */
     public function booking($id)
     {
-        
             $data =  AddServicesModel::find($id);
             return view('/customer/booking',['service'=>$data]);
-    
     } 
-
 
     /**
      * Show the form for editing the specified resource.

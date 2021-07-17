@@ -100,25 +100,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 		<div class="row">
 
-		<!--<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
-		 <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" style=" height:100px; width:100px;" alt=""> 
-		</div>-->
 
 		<div class="col col-12 col-sm-6 col-md-6 col-lg-6">
-		<h2 class="w3l_header">{{ $service->sname }}</h2>
-		</div>
-		
-	<!--	<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
-		<br>
-		<h5>Working time from<h5>
-		<h4>10:00 AM</h4>
-		<h5> to<h5>
-		<h4>7:00 PM</h4>
-		</div> -->
-
-		<br>
-		<div class="col col-12 col-sm-3 col-md-3 col-lg-3">
-		<h3>Duration: <?php echo(new DateTime($service->duration))->format('h:i'); ?></h3>
+        <h5>Sorry for the inconvenience please choose another date ! </h5>
 		</div>
 		<br>
      </div>
@@ -128,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        <br>
 	   <br>
 	   <br>
-      <form action="/customer/bookingprocess/{{$service->id}}" method="post">
+      <form action="/customer/bookingedit/{{$bookings->id}}" method="post">
 	  {{ csrf_field() }}
       <div class="container">
        <div class="row">
@@ -136,12 +120,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
          <div class="form-group">
     		<label for="bookdate">Date</label>
-    		<input type="date" class="form-control" min="<?php echo(new DateTime('tomorrow'))->format('Y-m-d');?>" max="2021-12-31" name="date" id="bookdate" required>
+    		<input value="{{ $bookings->sname }}" type="date" class="form-control" min="<?php echo(new DateTime('tomorrow'))->format('Y-m-d');?>" max="2021-12-31" name="date" id="bookdate" required>
   		</div>
         
         <div class="form-group">
     		<label for="booktime">Time</label>
-    		<input type="time" min="<?php echo(new DateTime('10:00'))->format('H:i:s');?>" max="19:00" class="form-control" name="time" id="booktime" required>
+    		<input value="{{ $bookings->time }}" type="time" min="<?php echo(new DateTime('10:00'))->format('H:i:s');?>" max="19:00" class="form-control" name="time" id="booktime" required>
   		</div>
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>
   	   </form>

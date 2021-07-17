@@ -114,41 +114,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		@if(Session::get('success'))
             <div class="alert alert-success">
             {{  Session::get('success') }}
-            </div>
+            </div> 
         @endif
 
 		<h3 class="w3l_header">SERVICES</h3> <br>
         <div class="container">
-        <div class="row">
-        <div class="col">
-            <table class="table table-hover">
-            <thead>
-                <th>SERVICE</th>
-                <th>DESCRIPTION</th>
-                <th>RATE</th>
-				<th>DURATION(H:m)</th>
-                <th>IMAGE</th>
-                <th></th>
-            </thead>
-            <tbody>
+		<div class="row">
             @foreach($services as $service)
-            <tr>
-                <td> {{ $service->sname }} </td>
-                <td> {{ $service->sdesc }} </td>
-                <td> {{ $service->srate }} </td>
-				<td>  <?php echo(new DateTime($service->duration))->format('h:i'); ?> </td>
-                <td><img  style="border-radius:50%; width:80px;"  src="{{URL::asset('/assets/imgages/'.$service->simage) }}" ></td>
-                <td>
-                <div class="btn">
-                <a href={{"/customer/booking/".$service->id}} class="btn btn-outline-success">Book Now</a>
-                </div>
-                </td>
-            </tr>
-            @endforeach
-            </tbody>
-        </table>
-      </div>
-    </div>
+			&nbsp; &nbsp; &nbsp;
+			<div class="card" style="width: 18rem;">
+  			   <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
+  			    <div class="card-body">
+    				<h4 class="card-title">{{ $service->sname }} ₹{{ $service->srate }}</h4>
+    				<p class="card-text">{{ $service->sdesc }}</p>
+    				<div class="btn">
+                	 <a href={{"/customer/booking/".$service->id}} class="btn btn-outline-success">Book Now</a>
+                	</div>
+			    </div>
+            </div>
+			@endforeach
+		</div>
+		</div>
+
+
+
+                <!--<td> {{ $service->srate }} </td>
+				<td>  </td>
+                <td><img  style="border-radius:50%; width:80px;"  src="{{URL::asset('/assets/imgages/'.$service->simage) }}" ></td>-->
+      
  </div>
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>

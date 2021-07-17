@@ -110,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col">
 
             <table class="table table-hover">
-            <thead>
+            <thead class="dark">
                 <th>SERVICE</th>
                 <th>RATE</th>
                 <th>DATE</th>
@@ -126,13 +126,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{$booking->date }} </td>
                 <td> <?php echo(new DateTime($booking->time))->format('h:i'); ?> </td>
 				<td> {{ $booking->status }}
-                <div class="btn">
 				@if($booking->status == 'Pending')
 				<td>
                 <a href={{"/customer/bookingdel/".$booking->id}} class="btn btn-outline-success">Delete</a> 
-                </div>
                 </td>
 				@endif
+
+			<!--	@if($booking->status == 'Declined')
+				<td>
+                <a href={{"/customer/edit/".$booking->id}} class="btn btn-outline-success">Edit</a> 
+                </div>
+                </td>
+				@endif -->
             </tr>
 
 		@empty

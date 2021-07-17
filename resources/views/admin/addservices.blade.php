@@ -132,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="form-group">
 			<label for="servicerate">Rate</label>
-			<input type="number" class="form-control" name="srate" id="servicerate"  placeholder="Rate" required>
+			<input type="number" class="form-control" name="srate" id="servicerate"  placeholder="Rate" >
 		</div>
 		 
 		<div class="form-group">
@@ -144,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="form-group">
 			<label for="duration">Duration</label>
-			<input type="time" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" class="form-control" name="duration" id="duration"  placeholder="Duration" required>
+			<input type="time" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" class="form-control" name="duration" id="duration"  placeholder="Duration" >
 		</div>
 		
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>

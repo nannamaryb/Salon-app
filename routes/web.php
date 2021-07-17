@@ -76,6 +76,12 @@ Route::get('/admin/viewservices',[AddServices_controller::class,'index']);
 
 Route::post('/admin/searchservice',[AddServices_controller::class,'search']);
 
+Route::get('/admin/categories',[AddServices_controller::class,'createCategory']);
+
+Route::get('/admin/categories',[AddServices_controller::class,'category']);
+
+Route::post('/admin/catread',[AddServices_controller::class,'storeCategory']);
+
 Route::post('/admin/searchcustomer',[login_controller::class,'search']);
 
 Route::get('/admin/edit/{id}',[AddServices_controller::class,'edit']);
@@ -138,6 +144,10 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
     Route::get('/customer/mybookings',[register_controller::class,'myBookings']);
 
     Route::get('/customer/bookingdel/{id}',[register_controller::class,'delete']);
+
+    //Route::get('/customer/edit/{id}',[AddBooking_controller::class,'bookingEdit']);
+
+    //Route::post('/customer/bookingedit/{id}',[AddBooking_controller::class,'updateBooking']);
 
     Route::get('/customer/profile',[register_controller::class,'viewProfile']);
 
