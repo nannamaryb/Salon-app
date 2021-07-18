@@ -122,29 +122,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="form-group">
     		<label for="servicename">Service Name</label>
-    		<input type="text" class="form-control" name="sname" id="servicename" placeholder="Service Name" required>
+    		<input type="text" class="form-control" name="sname" id="servicename" placeholder="Service Name" value="{{ old('sname') }}" required>
+            <span class="text-danger">@error('sname'){{ $message }} @enderror </span>
   		</div>
 		  
         <div class="form-group">
           <label for="servicedesc">Description</label>
-          <textarea class="form-control" name="sdesc" id="servicedesc" placeholder="Description"  rows="3" required></textarea>
+          <textarea class="form-control" name="sdesc" id="servicedesc" placeholder="Description"  rows="3" value="{{ old('sdesc') }}" required>
+            <span class="text-danger">@error('sdesc'){{ $message }} @enderror </span>
+		  </textarea>
         </div>
 
 		<div class="form-group">
 			<label for="servicerate">Rate</label>
-			<input type="number" class="form-control" name="srate" id="servicerate"  placeholder="Rate" >
+			<input type="number" class="form-control" name="srate" id="servicerate"  placeholder="Rate" required>
 		</div>
 		 
 		<div class="form-group">
 			<label for="file">Image</label>
-			<input type="file" class="form-control" name="simage" id = "serviceimage" required>
+			<input type="file" class="form-control" name="simage" id = "serviceimage" required >
 			<!--<img  alt="service image" style="max-width:130px;margin-top:20px;" /> -->
 		</div>
 
 
 		<div class="form-group">
 			<label for="duration">Duration</label>
-			<input type="time" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" class="form-control" name="duration" id="duration"  placeholder="Duration" >
+			<input type="time" min="<?php echo(new DateTime('00:00'))->format('H:i:s');?>" max="09:00" class="form-control" name="duration" id="duration"  placeholder="Duration" required >
 		</div>
 		
   		<button type="submit" class="btn btn-outline-success">SUBMIT</button>

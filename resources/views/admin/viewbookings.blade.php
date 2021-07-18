@@ -152,7 +152,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <td> {{ optional($booking->customer)->cname }} </td>
                 <td> {{ optional($booking->customer)->cemail }} </td>
                 <td> {{ $booking->date }} </td>
-                <td> <?php echo(new DateTime($booking->time))->format('h:i'); ?></td>
+                <td> <?php 
+						 if($booking->time < "12:00")
+						 {
+							echo(new DateTime($booking->time))->format('h:i A'); 
+						 }
+						 else
+						 {
+							echo(new DateTime($booking->time))->format('h:i'); 
+							echo "PM";
+						 }
+					   ?>
+				</td>
 	            <td>  
 					<a href={{ "/admin/accept/".$booking->id }} class="btn btn-outline-success">Accept</a>
 					<a href={{ "/admin/decline/".$booking->id }}" class="btn btn-outline-danger">Decline</a>
