@@ -102,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 		<div class="col col-12 col-sm-6 col-md-6 col-lg-6">
-        <h5>Sorry for the inconvenience please choose another date ! </h5>
+        <h4>Sorry for the inconvenience please choose another date ! </h4>
 		</div>
 		<br>
      </div>

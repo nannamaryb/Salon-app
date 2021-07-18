@@ -129,10 +129,10 @@ class AddBooking_controller extends Controller
 
                     $booking->save();
                     
-                  return redirect('/customer/viewservices')->with('success','Updated Successfully');
+                  return redirect('/customer/mybookings')->with('success','Updated Successfully');
 
                 }
-        return redirect('/customer/viewservices');
+        return redirect('/customer/mybookings');
     }
     
 
