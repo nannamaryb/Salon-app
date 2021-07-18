@@ -84,7 +84,7 @@ class login_controller extends Controller
 
         if($save)
         {
-            return back()->with('success','successfully registered');
+            return redirect('/auth/login')->with('success','successfully registered');
         }
         else
             {
