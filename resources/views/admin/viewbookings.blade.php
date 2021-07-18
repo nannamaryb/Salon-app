@@ -129,10 +129,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <div>
-<h5><span>Total Bookings : {{ $total }} </h5>
+
+
 </div>
 
 <h3 class="w3l_header">BOOKINGS</h3> <br>
+<h5><span>Total Bookings: {{ $total }}</span></h5>
 <div class="container">
     <div class="row">
         <div class="col">
