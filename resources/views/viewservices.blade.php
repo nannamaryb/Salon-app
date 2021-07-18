@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="card" style="width: 18rem;">
   			   <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
   			    <div class="card-body">
-    				<h6 class="card-title">{{ $service->sname }} ₹{{ $service->srate }}</h6>
+    				<h4 class="card-title">{{ $service->sname }}  ₹{{ $service->srate }}</h4>
     				<p class="card-text">{{ $service->sdesc }}</p>
     				<div class="btn">
                 	 <a href={{"/customer/booking/".$service->id}} class="btn btn-outline-success">Book Now</a>

@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		@if(Session::get('success'))
             <div class="alert alert-success">
             {{  Session::get('success') }}
-            </div>
+            </div> 
         @endif
 
             <h3 class="w3l_header">SERVICES</h3> <br>
@@ -127,7 +127,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   			   <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
   			    <div class="card-body">
     				<h4 class="card-title">{{ $service->sname }} ₹{{ $service->srate }}</h4>
-					<p> </p>
     				<p class="card-text">{{ $service->sdesc }}</p>
                         <a href={{"/admin/edit/".$service->id}} class="btn btn-outline-success">Edit</a>
 					    <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger"  onclick="return confirm('Are you sure want to delete this service')">Delete</a> 

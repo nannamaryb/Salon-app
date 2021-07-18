@@ -119,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<h3 class="w3l_header">SERVICES</h3> <br>
         <div class="container">
-		<div class="row">
+		<div class="row"> 
             @foreach($services as $service)
 			&nbsp; &nbsp; &nbsp;
 			<div class="card" style="width: 18rem;">
