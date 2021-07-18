@@ -45,8 +45,9 @@ class AddServices_controller extends Controller
             $request->validate([
 
                 'simage' => 'mimes:jpeg,bmp,png', 
+                'srate' => 'required|min:2|max:4',
                 'sname' => 'required|min:2|max:32|unique:add_services_models,sname|regex:/^[A-Za-z\s]+$/',
-                'sdesc' => 'required|min:2|max:100|regex:/^[A-Za-z\s]+$/',
+                'sdesc' => 'required|min:2|max:500',
             ]);
 
         $today = Carbon::now()->format('Y-m-d');
@@ -124,9 +125,10 @@ class AddServices_controller extends Controller
         
             $request->validate([
 
-                //'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
-                //'sdesc' => 'required|min:2|max:60|regex:/^[A-Za-z\s]+$/',
                 'simage' => 'mimes:jpeg,bmp,png', 
+                //'srate' => 'required|min:2|max:4',
+                //'sname' => 'required|min:2|max:32|unique:add_services_models,sname|regex:/^[A-Za-z\s]+$/',
+                //'sdesc' => 'required|min:2|max:500', 
                
             ]);
         

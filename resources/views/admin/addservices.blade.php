@@ -129,8 +129,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="form-group">
           <label for="servicedesc">Description</label>
           <textarea class="form-control" name="sdesc" id="servicedesc" placeholder="Description"  rows="3" value="{{ old('sdesc') }}" required>
-            <span class="text-danger">@error('sdesc'){{ $message }} @enderror </span>
 		  </textarea>
+		  <span class="text-danger">@error('sdesc'){{ $message }} @enderror </span>
         </div>
 
 		<div class="form-group">
