@@ -120,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
          <div class="form-group">
     		<label for="bookdate">Date</label>
-    		<input value="{{ $bookings->sname }}" type="date" class="form-control" min="<?php echo(new DateTime('tomorrow'))->format('Y-m-d');?>" max="2021-12-31" name="date" id="bookdate" required>
+    		<input value="{{ $bookings->date }}" type="date" class="form-control" min="<?php echo(new DateTime('tomorrow'))->format('Y-m-d');?>" max="2021-12-31" name="date" id="bookdate" required>
   		</div>
         
         <div class="form-group">

@@ -143,12 +143,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </td>
 				@endif
 
-			<!--	@if($booking->status == 'Declined')
+			    @if($booking->status == 'Declined')
 				<td>
                 <a href={{"/customer/edit/".$booking->id}} class="btn btn-outline-success">Edit</a> 
                 </div>
                 </td>
-				@endif -->
+				@endif 
             </tr>
 
 		@empty

@@ -103,7 +103,7 @@ class AddBooking_controller extends Controller
         return redirect('/customer/viewservices');
     }
 
-    /*
+    
     public function bookingEdit($id)
     {
         $bookings = BookingModel::find($id);
@@ -119,12 +119,10 @@ class AddBooking_controller extends Controller
                         'time' => 'required|date_format:H:i',
                       ]); 
 
-                    $booking = new BookingModel();
+                    $booking = BookingModel::find($id);
                 
                     $getdate = request('date');
                     $gettime = request('time');
-                    $booking->service_id = $id;
-                    $booking->customer_id = $request->session()->get('LoggedUser');
                     $booking->date = $getdate;
                     $booking->time = $gettime;
                     $booking->status = 'Pending';
@@ -136,7 +134,7 @@ class AddBooking_controller extends Controller
                 }
         return redirect('/customer/viewservices');
     }
-    */
+    
 
     /**
      * Display the specified resource.
