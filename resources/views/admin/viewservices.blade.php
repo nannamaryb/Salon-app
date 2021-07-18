@@ -129,8 +129,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     				<h4 class="card-title">{{ $service->sname }} ₹{{ $service->srate }}</h4>
     				<p class="card-text">{{ $service->sdesc }}</p>
                         <a href={{"/admin/edit/".$service->id}} class="btn btn-outline-success">Edit</a>
+						<!--
 					    <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger"  onclick="return confirm('Are you sure want to delete this service')">Delete</a> 
-						</div>
+	                    -->
+					</div>
 			</div>
             @endforeach
     </div>
