@@ -4,6 +4,15 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
+<?php
+use App\Http\Controllers\AddBooking_controller;
+if(Session::has('LoggedUser'))
+{
+    $total = AddBooking_controller::totbookings();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -115,12 +124,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div>
 </div>
 
-
+<div>
 <a class="btn btn-outline-info"  href="/admin/bookingreport">Report PDF</a>
-
+</div>
 
 <div>
-</div> 
+<h5><span>Total Bookings : {{ $total }} </h5>
+</div>
 
 <h3 class="w3l_header">BOOKINGS</h3> <br>
 <div class="container">

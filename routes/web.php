@@ -76,11 +76,11 @@ Route::get('/admin/viewservices',[AddServices_controller::class,'index']);
 
 Route::post('/admin/searchservice',[AddServices_controller::class,'search']);
 
-Route::get('/admin/categories',[AddServices_controller::class,'createCategory']);
+//Route::get('/admin/categories',[AddServices_controller::class,'createCategory']);
 
-Route::get('/admin/categories',[AddServices_controller::class,'category']);
+//Route::get('/admin/categories',[AddServices_controller::class,'category']);
 
-Route::post('/admin/catread',[AddServices_controller::class,'storeCategory']);
+//Route::post('/admin/catread',[AddServices_controller::class,'storeCategory']);
 
 Route::post('/admin/searchcustomer',[login_controller::class,'search']);
 

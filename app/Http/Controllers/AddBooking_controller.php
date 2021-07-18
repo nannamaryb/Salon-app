@@ -17,6 +17,13 @@ class AddBooking_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    static public function totbookings()
+    {
+        return BookingModel::count('id');
+    }
+
+
     public function index()
     {
         $bookings = BookingModel::with('customer','service')->get();
