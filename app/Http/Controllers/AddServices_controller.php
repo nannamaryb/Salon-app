@@ -19,7 +19,7 @@ class AddServices_controller extends Controller
      */
     public function index()
     {
-        $services = AddServicesModel::all();
+       $services = AddServicesModel::all();
        return view('/admin/viewservices',compact('services'));
     }
 

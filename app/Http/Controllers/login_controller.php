@@ -67,7 +67,7 @@ class login_controller extends Controller
         $user = new User();
         
         $register->cname = $request->cname;
-        $register->cmob = $request->cmob;;
+        $register->cmob = $request->cmob;
         $register->cemail = $request->cemail;
         $register->cpass =Hash::make($request->cpass);
         $register->conpass =Hash::make($request->conpass);

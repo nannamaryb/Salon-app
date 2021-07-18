@@ -12,8 +12,7 @@ use App\Models\AddServicesModel;
 
 use App\Models\BookingModel;
 
-
-
+use Illuminate\Support\Facades\Hash;
 
 
 class register_controller extends Controller
@@ -119,5 +118,23 @@ class register_controller extends Controller
         return redirect('/customer/profile')->with('success','Updated Successfully');
 
     }  
+
+    public function changePass($id)
+    {
+        $customers = User::find($id);
+        return view('/customer/changepass',compact('customers'));
+    } 
+
+    public function updatePass(Request $request,$id)
+    {
+        $getpass = request('cpass');
+
+        $customer = User::find($id);
+        $customer->cpass =Hash::make($request->cpass);
+        $customer->save();
+
+        return redirect('/customer/profile')->with('success','Password changed');
+    }
+
    
 }

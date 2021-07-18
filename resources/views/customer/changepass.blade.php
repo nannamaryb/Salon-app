@@ -51,11 +51,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="address">
 						<p>4th block,</p>
-					    <p>Panampilly Nagar.</p>
+						<p>Panampilly Nagar.</p>
 					</div>
 					<div class="address">
 					<p class="para-y"><a href="/customer/profile">View Profile</a></p> 
 					</div>
+					
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -79,11 +80,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-					<li><a  href="/customer/index">Home</a></li>
+					        <li><a  href="/customer/index">Home</a></li>
 							<li><a href="/customer/viewservices">Services</a></li>
 							<li><a href="/customer/mybookings">My Bookings</a></li>
-							<li><a href="/customer/gallery">Gallery</a></li>
-				           	<li><a href="/customer/about">About</a></li> 
+					        <li><a href="/customer/gallery">Gallery</a></li> 
+					        <li><a href="/customer/about">About</a></li> 
 							<li><a href="/customer/contact">Contact</a></li> 
 					</ul>
 				</div>
@@ -97,43 +98,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
      <div class="row">
        <div class="col col-12 c">
-	   @if(Session::get('success'))
-            <div class="alert alert-success">
-            {{  Session::get('success') }}
-            </div>
-        @endif
 
-		<h3 class="w3l_header">MY PROFILE</h3> <br>
+        <h3 class="w3l_header">EDIT PROFILE</h3> <br>
         <div class="container">
         <div class="row">
-		<div class="col col-12 col-sm-4 col-md-4 col-lg-4">
-		</div>
-        <div class="col col-12 col-sm-4 col-md-4 col-lg-4">
-            <table class="table"> 
-            <tr>
-                <td><b>NAME </b></td>
-                <td> {{ $customer->cname }} </td>
-            </tr>
+        <div class="col">
+        <form action="/customer/passedit/{{ $customers->id }}"  method="post">
+        
+		{{ csrf_field() }}
 
-            <tr>
-                <td><b>EMAIL</b></td>
-                <td> {{ $customer->cemail }} </td>
-            </tr>
-            <tr>
-                <td><b>MOBILE</b></td>
-                <td> {{ $customer->cmob }} </td>
-            </tr>
-            <tr>
-                <td>
-                <div class="btn">
-                <a href={{"/customer/editprofile/".$customer->id}} class="btn btn-outline-success">Edit</a> 
-				<a href={{"/customer/changepass/".$customer->id}} style="color: red">Change Password</a>
-                </div>
-                </td>
-            </tr>
-        </table>
-      </div>
-	  <div class="col col-12 col-sm-4 col-md-4 col-lg-4">
+          <br>
+        
+        <div class="form-group">
+          <label for="cuspass">New Password</label>
+          <input value="{{ $customers->cpass }}" type="password" class="form-control" name="cpass" id="cuspass" required>
+        </div>
+
+            <button type="submit" class="btn btn-outline-success">SUBMIT</button>
+        </form>
+       </div>
+	    <div class="col col-12 col-sm-4 col-md-4 col-lg-4">
 		</div>
     </div>
  </div>

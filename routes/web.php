@@ -154,8 +154,11 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
     Route::get('/customer/editprofile/{id}',[register_controller::class,'profileEdit']);
 
     Route::post('/customer/profiledit/{id}',[register_controller::class,'updateProfile']);
+
+    Route::get('/customer/changepass/{id}',[register_controller::class,'changePass']);
     
-   
+    Route::post('/customer/passedit/{id}',[register_controller::class,'updatePass']);
+ 
 });
 
 

@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h3 class="w3l_header">SERVICES</h3> <br>
         <div class="container">
 		<div class="row">
-            @foreach($services as $service)
+            @foreach($services as $service)	
 			&nbsp; &nbsp; &nbsp;
 			<div class="card" style="width: 18rem;">
   			   <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
@@ -130,8 +130,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p> </p>
     				<p class="card-text">{{ $service->sdesc }}</p>
                         <a href={{"/admin/edit/".$service->id}} class="btn btn-outline-success">Edit</a>
-                        <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger">Delete</a> 
-				</div>
+					    <a href={{"/admin/delete/".$service->id }} class="btn btn-outline-danger"  onclick="return confirm('Are you sure want to delete this service')">Delete</a> 
+						</div>
 			</div>
             @endforeach
     </div>
