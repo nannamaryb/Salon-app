@@ -126,13 +126,13 @@ class AddServices_controller extends Controller
             $request->validate([
 
                 'simage' => 'mimes:jpeg,bmp,png', 
-                //'srate' => 'required|min:2|max:4',
-                //'sname' => 'required|min:2|max:32|unique:add_services_models,sname|regex:/^[A-Za-z\s]+$/',
-                //'sdesc' => 'required|min:2|max:500', 
+                'srate' => 'required|min:2|max:4',
+                //'sname' => 'required|min:2|max:32|regex:/^[A-Za-z\s]+$/',
+                'sdesc' => 'required|min:2|max:500', 
                
             ]);
         
-        $getname=request('sname');
+       // $getname=request('sname');
         $getdesc=request('sdesc');
         $getrate=request('srate');
         $getimage=$request->file('simage'); 
@@ -142,7 +142,7 @@ class AddServices_controller extends Controller
 
         $service = AddServicesModel::find($id);
 
-        $service->sname=$getname;
+       // $service->sname=$getname;
         $service->sdesc=$getdesc;
         $service->srate=$getrate;
         $service->simage=$name;

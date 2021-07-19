@@ -122,11 +122,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         {{ csrf_field() }}
 
-        <div class="form-group">
-    		<label for="servicename">Service Name</label>
-    		<input value="{{ $services->sname }}" type="text" class="form-control" name="sname" id="servicename" placeholder="Service Name" required>
-  		</div>
-		  
+        <h3>{{ $services->sname }}</h3>
+		  <br>
         <div class="form-group">
           <label for="servicedesc">Description</label>
           <textarea value="{{ $services->sdesc }}" class="form-control" name="sdesc" id="servicedesc" placeholder="Description"  rows="3" required></textarea>
