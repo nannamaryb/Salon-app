@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             @foreach($services as $service)
 			&nbsp; &nbsp; &nbsp;
 			<div class="card" style="width: 18rem;">
-  			   <img src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
+  			   <img  src="{{URL::asset('/assets/imgages/'.$service->simage) }}" class="card-img-top" alt="...">
   			    <div class="card-body">
     				<h4 class="card-title">{{ $service->sname }} ₹{{ $service->srate }}</h4>
     				<p class="card-text">{{ $service->sdesc }}</p>
@@ -135,12 +135,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			@endforeach
 		</div>
 		</div>
-
-
-
-                <!--<td> {{ $service->srate }} </td>
-				<td>  </td>
-                <td><img  style="border-radius:50%; width:80px;"  src="{{URL::asset('/assets/imgages/'.$service->simage) }}" ></td>-->
       
  </div>
  <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>

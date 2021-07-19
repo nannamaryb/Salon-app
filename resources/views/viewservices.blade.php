@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 
 					</div>
-
+ 
                         <form action="/searchservices" class="form-inline" method="post">
                               {{ csrf_field() }}
                                 <input class="form-control mr-sm-2" name="sname" type="search" placeholder="Services" aria-label="Search">

@@ -40,7 +40,7 @@ class register_controller extends Controller
         $getname = request('sname');
         $services = AddServicesModel::query()->where('sname','LIKE',"%{$getname}%")->get();
         return view('/viewservices',compact('services'));
-    }
+    } 
     /**
      * Show the form for creating a new resource.
      *
@@ -67,7 +67,7 @@ class register_controller extends Controller
     } */
 
 
-    public function search(Request $request)
+     public function search1(Request $request)
      {
          $getname = request('sname');
          $services = AddServicesModel::query()->where('sname','LIKE',"%{$getname}%")->get();

@@ -129,7 +129,7 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
         return view('/customer/gallery');
     });
     
-    Route::post('/customer/searchservice',[register_controller::class,'search']);
+    Route::post('/customer/searchservice',[register_controller::class,'search1']);
 
     Route::get('/customer/booking/{id}',[AddBooking_controller::class,'booking']);
 
@@ -154,8 +154,6 @@ Route::group(['middleware'=>['CustomerCheck']], function(){
     Route::post('/customer/passedit/{id}',[register_controller::class,'updatePass']);
  
 });
-
-
 
 
 
